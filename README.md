@@ -5,6 +5,8 @@ A quine that creates a 3d model of itself
 ## Install
 
 ```sh
+git clone https://github.com/donno2048/cylinder-quine
+cd cylinder-quine
 pip3 install -r requirements.txt
 ```
 
