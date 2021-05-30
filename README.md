@@ -12,9 +12,17 @@ pip3 install -r requirements.txt
 
 ## Usage
 
-```py
+```sh
 python3 quine.py
 ```
+
+You can use the version with the better style like so:
+
+```sh
+git apply quine.patch
+python3 quine.py
+```
+
 
 ## Inspiration
 
