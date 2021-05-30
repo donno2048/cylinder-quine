@@ -11,5 +11,5 @@ def f(x):
     subplot=figure().add_subplot(projection="3d")
     subplot.plot_surface(X,Y,Z,rstride=1,cstride=1,facecolors=C)
     show()
-separated=("exec(s:=''%r'')"%s).split("\\\\\\\\n")
+separated=("exec(s:=\'\'%r\'\')"%s).split("\\\\\\\\n")
 f("\\\\\\\\n".join([i.replace("\\\\n", "\\n") for i in separated]))''')
