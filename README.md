@@ -1,29 +1,12 @@
 # cylinder-quine
 
-A quine that creates a 3d model of itself
+[![Test status](https://github.com/donno2048/cylinder-quine/actions/workflows/gen.yml/badge.svg)](https://github.com/donno2048/cylinder-quine/actions/workflows/gen.yml)
 
-## Install
+A quine that creates a 3D model of itself.
 
-```sh
-git clone https://github.com/donno2048/cylinder-quine
-cd cylinder-quine
-pip3 install -r requirements.txt
-```
+![GIF](./main.gif)
 
-## Usage
+The quine kind of sucks, I didn't want to write a specialized GIF encoder [again](https://github.com/donno2048/gif-quine) or to handle the 3D to 2D projection by hand, so I made the 3D model and used matplotlib for the projection and ffmpeg for GIF encoding.
 
-```sh
-python3 quine.py
-```
+Also, using tqdm to show a progress bar, PIL as an easy shortcut for reading the font file, and numpy just because without it Python math is very slow and the render will take days.
 
-You can use the version with the better style like so:
-
-```sh
-git apply quine.patch
-python3 quine.py
-```
-
-
-## Inspiration
-
-My own [cylinderize](https://github.com/donno2048/cylinderize) (which is not being used in this project)
