@@ -15,7 +15,7 @@ def f(x,font=ImageFont.load_default(size=15),S=2,F=100):
         T,Z=meshgrid(lin(2*pi*fr/F,(1+fr/F)*2*pi,w),lin(0,1,h))
         return subplot.plot_surface(sin(pi / 2-T), sin(T), - Z,
                         rstride=1,cstride=1,facecolors=colors),
-    FuncAnimation(fig, update, frames = F, interval = 20, fargs
+    FuncAnimation(fig, update, frames = F, interval = 50, fargs
                             =(fig.add_subplot(projection="3d"),
                    (1-array(im))[...,newaxis].repeat(3,axis=-1)
              ),cache_frame_data=False).save("main.gif",dpi=400,
