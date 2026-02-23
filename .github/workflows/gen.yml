@@ -14,7 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - run: |
-        python3 main.py
+        python -m pip install matplotlib numpy tqdm pillow imageio_ffmpeg
+        python main.py
         git add main.gif
         git config --global user.email "$GITHUB_REPOSITORY_OWNER_ID+$GITHUB_REPOSITORY_OWNER@users.noreply.github.com"
         git config --global user.name "$GITHUB_REPOSITORY_OWNER"
